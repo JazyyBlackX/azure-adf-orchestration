@@ -1,4 +1,13 @@
 {
   "name": "ADF_Example_Pipeline",
-  "activities": []
+  "activities": [
+    {
+      "name": "RunNotebook",
+      "type": "DatabricksNotebook",
+      "dependsOn": [],
+      "typeProperties": {
+        "notebookPath": "/notebooks/01_ingest"
+      }
+    }
+  ]
 }
